@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+ 
+  
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  #h1 {
+      font-family: 'Wendy One', sans-serif;
+  }
+  
+  #h5 {
+      font-family: 'Lato', sans-serif;
+  }
+  
+  p {
+      font-family: 'Lato', sans-serif;
+  }
+  
+  .span {
+      color: red;
+  }
+  
+  img {
+      height: 19rem !important;
+  }
+  
+  #card-body {
+      padding: 0 !important;
+  }
+  
+  .img-custom-fluid {
+      max-width: 22rem !important;
+      z-index: 100;
+      margin-left: -7.9rem;
+  }
+  
+  .form {
+      margin-left: -4%
+  }
+  
+   .card { 
+      /* height: 25rem;  */
+      box-shadow: 3px 6px 11px rgba(67, 67, 67, 0.25);
+  
+  }
+  
+  #Condition {
+      font-size: 11px;
+      margin-top: 16px !important;
+      margin-bottom: 1rem;
+    
+  }
+  #Condition a {
+    text-decoration: none;
+  }
+  
+  .check {
+  
+      width: 12px;
+      height: 12px;
+  }
+  
+  .checkb {
+      align-items: center;
+      margin-left: 2rem !important;
+  }
+  
+  #button {
+      background-color: #5BDCFE;
+      font-family: 'Lato', sans-serif;
+      border-radius: 3rem;
+      height: 2rem;
+      font-size: 14px;
+      width: 5rem;
+      
+  }
+  
+  #last {
+      color: #ACACAC;
+      font-size: 13px;
+      margin-left: 5px;
+      margin-right: 5px;
+  }
+  
+  .SignUp {
+      margin-bottom: 0rem !important;
+  }
+  
+  .btn1 {
+      background-color: #fff;
+      height: 2.5rem;
+      width: 7rem;
+      border-radius: 5px;
+      border: 1px solid #D0D0D0;
+  }
+  
+  .btn2 {
+      background-color: #fff;
+      width: 7rem;
+      border-radius: 5px;
+      border: 1px solid #D0D0D0;
+  }
+  small{
+      margin-left:0.5rem ;
+      color: red;
+  } 
+  .form p{
+      margin-bottom: 0 !important;
+      margin-left:0.5rem ;
+      color: red;
+  }
+  
+  @media (max-width: 321px) {
+      .img-custom-fluid {
+          margin-left: 0;
+          display: none;
+      }
+  
+  }
+  
+  
+  @media (max-width: 426px) {
+      .img-custom-fluid{
+          margin-left: 0;
+          display: none;
+      }
+      .sing-up-container{
+       
+      }
+  
+  }
+  
+  @media (max-width: 769px) {
+      .img-custom-fluid{
+          margin-left: 0;
+          display: none;
+      }
+      .alt-sign{
+          margin-left: 0;
+          justify-content: center;
+      }
+  
+  }
+
+  .form p{
+    margin-bottom: 0 !important;
+    margin-left:0.5rem ;
+    color: red;
+}
+.sign-up{
+    
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff; 
+    text-align: center;
+}
+.sign-up-text{
+    text-align: center;
+
+}
+.sing-up-container{
+    width:5rem;
+    background-color: #FF2D20;
+    height: 2rem;
+    /* margin-left:10rem; */
+    margin-bottom: 3rem;
+    display: grid;
+    place-items: center;
+    border-radius: 40px;
+    margin-left: 10rem;
+}

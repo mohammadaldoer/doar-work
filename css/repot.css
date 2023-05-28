@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+
+/* 
+font-family: 'Wendy One', sans-serif;
+font-family: 'Lato', sans-serif; */
+
+:root {
+    --primary-color:#FCFBFD;
+    --secondary-color: #55538A;
+    --third-color:#C9F4FF;
+    --fourth-color:#ffff;
+    --linear-color: linear-gradient(108.56deg, rgba(255, 255, 255, 0) -13.21%, #C9F4FF 98.78%);
+    --fifth-color:#000;
+  }
+
+  *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  body{
+    padding: 0px 0px;
+    background-color: var(--primary-color);
+    font-family: 'Lato', sans-serif; 
+  }
+  .dark-mode{
+  
+    --primary-color:#1e2749;
+    --secondary-color: #deddf9;
+    --third-color:#404a6e;
+    --fourth-color:#404a6e;
+    --linear-color:#1e2749;
+    --fifth-color:#deddf9;
+  }
+
+  #logo{
+    font-family: 'Wendy One', sans-serif;
+    font-size: 30px;
+    width: 15%;
+    color: var(--secondary-color);
+    }
+    #nav{
+    border-radius: 100px;
+    padding: 5px 15px;
+    background-color: var(--fourth-color);
+    margin: 10px 64px;
+    }
+    #menu{
+    gap: 1gap;
+    }
+    #menuList{
+    gap:1rem;
+    }
+    #menuList a{
+    font-weight: 600;
+    color: var(--secondary-color);
+    border-radius:50px ;
+     }
+    #profileImage{
+    width: 40px;
+    }
+    .containerMenuList{
+    justify-content: space-between;
+    }
+    ul a {
+        text-decoration: none;
+        color: var(--secondary-color);
+        margin-left: 7px;
+    }
+  @media(max-width:768px){
+    body{
+    padding: 0;
+    background-color: var(--primary-color);
+    }
+    #nav{
+    border-radius: 0;
+    margin: 0;
+    }
+    .humberger{
+    color: #55538A !important;
+    }
+    }
+    
+  .result_h1 {
+    font-family:'Wendy One', sans-serif;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-top: 3rem;
+  }
+  #container{
+
+    display: grid;
+    justify-content: center;
+  
+  }
+      
+#card{
+ width: 40rem;
+  background-color: #ffffff;
+  height: 100vh;
+  margin-top: 2rem;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;border-radius: 15px;
+ 
+}
+
+.footer-row{
+  margin-top:10rem;
+  background-color: var(--third-color);
+ 
+  
+ 
+}
+.footer-logo{
+  font-family: 'Wendy One', sans-serif;
+  color: #55538A;
+  font-size: 4rem;
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  margin-left: 2rem;
+}
+
+ul p{
+  font-family: 'Wendy One', sans-serif;
+  color: #F7941F;
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 15px;
+
+}
+ul a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin-left: 7px;
+}
+.footer3-join{
+  display: flex;
+  flex-direction: column;
+  gap: 10PX;
+
+}
+.footer3-join img{
+  width: 10%;
+
+}
+.footer3-join P{
+  font-family: 'Wendy One', sans-serif;
+  color: #F7941F;
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 15px;
+  margin-left:10px ;
+
+}
+.small-text{
+  font-family: 'Lato', sans-serif;   
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+.icons{
+  display: flex;
+  gap: 10px;
+  margin-left: 5px;
+}
+.footer3-img {
+  display: grid;
+  align-items: end;
+  
+}
+.footer3-img img{
+  width: 70%;
+  justify-self: center;
+  /* margin-right: 25px; */
+}
+
+@media (max-width:450px){
+  #card{
+    width: 18rem;
+  }
+}
