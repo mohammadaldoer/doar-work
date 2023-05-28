@@ -8,6 +8,8 @@ let currentUser= JSON.parse(localStorage.getItem("currentUser"))||null
 let tech_score
 let falg=false
 let answer_array=[]
+answer_array.push(`math test results <br><br>`)
+
 let n1, n2
 function startTimer() {
   const timerElement = document.getElementById('timer');
@@ -20,17 +22,9 @@ function startTimer() {
     if (timeLeft == 0) {
       question_cnt++;
       wrong_count++;
-      answer_array.push(`${n1}+${n2}= : correct: ${answer}, your Answer: F`)
+      answer_array.push(`${n1}+${n2}= : correct: ${answer}  your Answer: F <br><br>`)
       console.log("first")
       if (question_cnt >= 10) {
-        // if (wrong_count === 3) {
-        //   alert('Sorry, but you failed in this exam!but continue to gain experience');
-        //   tech_score="f"
-        //   wrong_count = 0;
-        //   flag=true
-        //   do_theSave()
-
-        // } else {
           tech_score= score;
           question_cnt = 0;
           score = 0;
@@ -38,19 +32,7 @@ function startTimer() {
           do_theSave()
 
         }
-      // } else {
-      //   // if (wrong_count === 3) {
-      //   //   flag=true
-      //   //   alert('Sorry, but you failed in this exam!but continue to gain experience');
-      //   //   tech_score="f"
-      //   //   wrong_count = 0;
-      //   //   do_theSave()
-
-      //   // } else {
-      //   //   nextQuestion();
-      //   //   resetTimer();
-      //   // }
-      // }
+     
       nextQuestion();
       resetTimer();
     }
@@ -96,7 +78,7 @@ function checkAnswer() {
     question_cnt++;
     const prediction = predictImage();
     console.log(`Answer: ${answer}, prediction: ${prediction}`);
-    answer_array.push(`${n1}+${n2}= :correct: ${answer}, your Answer: ${prediction}`)
+    answer_array.push(`${n1}+${n2}= :correct: ${answer} your Answer: ${prediction} <br><br>`)
     if (prediction == answer) {
       score++;
       console.log(score);
@@ -131,5 +113,5 @@ let user = {
 };
 localStorage.setItem("MathReport",answer_array)
 localStorage.setItem("currentUser", JSON.stringify(user));
-window.location = "/html/EnglishTest.html";
+window.location = "/html/reportPage.html";
 }

@@ -18,5 +18,5 @@ if(user){
 }
 showMore.addEventListener("click",function(){
 
-    window.location = "/html/EnglishTest.html";
+    window.location = "/html/report.html";
 })

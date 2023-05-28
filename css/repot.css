@@ -21,7 +21,11 @@ font-family: 'Lato', sans-serif; */
     padding: 0%;
     box-sizing: border-box;
   }
-  
+  #card
+  {
+    margin: 5px;
+    padding: 30px;
+  }
   body{
     padding: 0px 0px;
     background-color: var(--primary-color);

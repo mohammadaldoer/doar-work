@@ -110,6 +110,8 @@ const questions = [
   let remainingTime;
   let timerInterval;
   let answer_array=[]
+  answer_array.push(`English test results <br><br>`)
+
   // Randomly select 10 questions
   selectedQuestions = getRandomQuestions(questions, 10);
   
@@ -172,10 +174,10 @@ const questions = [
   
     // Check if the selected choice is correct
     if (selectedChoice === correctAnswer) {
-      answer_array.push(`${selectedQuestions[currentQuestionIndex].question} :your answer ${selectedChoice} the correct answer ${correctAnswer}`)
+      answer_array.push(`${selectedQuestions[currentQuestionIndex].question} :your answer ${selectedChoice} the correct answer ${correctAnswer} <br><br>`)
       selectedQuestions[currentQuestionIndex].correct = true;
     } else {
-      answer_array.push(`${selectedQuestions[currentQuestionIndex].question} :your answer ${selectedChoice} the correct answer ${correctAnswer}`)
+      answer_array.push(`${selectedQuestions[currentQuestionIndex].question} :your answer ${selectedChoice} the correct answer ${correctAnswer}<br><br>`)
       selectedQuestions[currentQuestionIndex].correct = false;
     }
   
